@@ -19,15 +19,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
+          
       - name: Set up npm auth
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-          cat ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}"
+          echo "@matheus-neves:registry=https://npm.pkg.github.com/"
+          cat .npmrc
 
       - name: Verify npm registry URL
         run: npm config get registry
-        
+
       - name: Install Dependencies
         run: npm ci
 

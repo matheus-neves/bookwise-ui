@@ -25,6 +25,9 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
           cat ~/.npmrc
 
+      - name: Verify npm registry URL
+        run: npm config get registry
+        
       - name: Install Dependencies
         run: npm ci
 

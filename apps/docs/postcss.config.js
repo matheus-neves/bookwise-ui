@@ -1,2 +1,2 @@
-module.exports = require("@bookwise/tailwind-config/postcss.config")
+module.exports = require("@ui-bookwise/tailwind-config/postcss.config")
 

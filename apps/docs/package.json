@@ -1,6 +1,6 @@
 {
-  "name": "@bookwise/docs",
-  "version": "0.0.0",
+  "name": "@ui-bookwise/docs",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -11,14 +11,14 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@bookwise/ui": "*",
+    "@ui-bookwise/ui": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@bookwise/eslint-config": "*",
-    "@bookwise/tailwind-config": "*",
-    "@bookwise/ts-config": "*",
+    "@ui-bookwise/eslint-config": "*",
+    "@ui-bookwise/tailwind-config": "*",
+    "@ui-bookwise/ts-config": "*",
     "@storybook/addon-actions": "^7.5.3",
     "@storybook/addon-docs": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",

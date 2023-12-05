@@ -1,1 +1,1 @@
-module.exports = require("@bookwise/tailwind-config/tailwind.config")
+module.exports = require("@ui-bookwise/tailwind-config/tailwind.config")

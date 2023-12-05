@@ -1,1 +1,1 @@
-import '@bookwise/tailwind-config/styles.css'
+import '@ui-bookwise/tailwind-config/styles.css'

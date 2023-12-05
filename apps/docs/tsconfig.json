@@ -1,5 +1,5 @@
 {
-  "extends": "@bookwise/ts-config/react-app.json",
+  "extends": "@ui-bookwise/ts-config/react-app.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

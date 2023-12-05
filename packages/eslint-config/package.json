@@ -1,7 +1,7 @@
 {
-  "name": "@bookwise/eslint-config",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@ui-bookwise/eslint-config",
+  "version": "0.0.1",
+  "private": false,
   "files": [
     "library.js",
     "react.js",

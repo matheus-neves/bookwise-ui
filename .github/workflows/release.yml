@@ -1,4 +1,4 @@
-name: Deploy docs
+name: Release
 
 on:
   push:
@@ -9,7 +9,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Deploy docs
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -24,18 +24,14 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
-      - name: Install Dependencies
-        run: npm ci
-        
+      - run: npm ci
 
-      - name: Run build
-        run: npm run build
-        env: 
-          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-
-      - name: Publish Docs to Chromatic
-        uses: chromaui/action@v1
+      - name: Publish to NPM
+        id: changesets
+        uses: changesets/action@v1
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          workingDir: ./apps/docs
+          publish: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}

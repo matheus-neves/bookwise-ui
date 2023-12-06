@@ -1,4 +1,4 @@
-import { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 export default {
   content: [
@@ -7,7 +7,11 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "black-test": "#000"
+      }
+    },
   },
-} as Config
+} satisfies Config
 

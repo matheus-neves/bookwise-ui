@@ -1,5 +1,11 @@
 # @bookwise/tailwind-config
 
+## 0.0.3
+
+### Patch Changes
+
+- Setup theme. Install @tailwindcss/line-clamp and tailwind-variants
+
 ## 0.0.2
 
 ### Patch Changes

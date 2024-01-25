@@ -1,8 +1,12 @@
 {
   "name": "@ui-bookwise/tailwind-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "tailwind-variants": "^0.1.20"
   }
 }

@@ -6,16 +6,18 @@ function getAbsolutePath(value) {
 
 const config = {
   stories: ["../stories/*.stories.tsx", "../stories/**/*.stories.tsx"],
+  
   addons: [
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-docs"),
+    getAbsolutePath("@storybook/addon-docs")
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
-
+  
+  staticDirs: ['../public'],
   core: {},
 
   async viteFinal(config, { configType }) {

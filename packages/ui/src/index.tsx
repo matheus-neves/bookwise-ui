@@ -6,4 +6,6 @@ export { Tag } from "./Tag";
 export { SidebarItem } from "./SidebarItem";
 export { TextInput, TextInputContainer, TextInputIconWrapper } from "./TextInput";
 export { TextArea, TextAreaContainer } from './TextArea'
+export { IconButton } from './IconButton'
+
 

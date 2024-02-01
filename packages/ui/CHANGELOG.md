@@ -1,5 +1,11 @@
 # @bookwise/ui
 
+## 0.1.3
+
+### Patch Changes
+
+- Implement icon button component
+
 ## 0.1.2
 
 ### Patch Changes

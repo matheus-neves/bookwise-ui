@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }

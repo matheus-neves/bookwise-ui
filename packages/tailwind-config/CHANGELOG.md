@@ -1,5 +1,11 @@
 # @bookwise/tailwind-config
 
+## 0.0.4
+
+### Patch Changes
+
+- fix: global font-family name
+
 ## 0.0.3
 
 ### Patch Changes

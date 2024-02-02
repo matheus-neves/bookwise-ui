@@ -1,5 +1,11 @@
 # @bookwise/ui
 
+## 0.1.4
+
+### Patch Changes
+
+- feat: Implement Custom Link component and stories
+
 ## 0.1.3
 
 ### Patch Changes

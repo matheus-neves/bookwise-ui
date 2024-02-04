@@ -12,7 +12,7 @@ const preview: Preview = {
       default: 'dark',
       values: [
         { name: 'light', value: config.theme.extend.colors.gray['100'] },
-        { name: 'dark', value: config.theme.extend.colors.gray['800'] },
+        { name: 'dark', value: '#000' },
       ],
     },
   },

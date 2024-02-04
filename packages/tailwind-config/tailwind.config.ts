@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import lineClampPlugin from '@tailwindcss/line-clamp'
 
 export default {
   content: [
@@ -41,7 +40,6 @@ export default {
         'vertical': 'linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)',
       }
     },
-  },
-  plugins: [lineClampPlugin]
+  }
 } as const satisfies Config 
 

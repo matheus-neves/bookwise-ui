@@ -1,6 +1,7 @@
 {
   "tailwindCSS.experimental.configFile": {
     "apps/docs/tailwind.config.js": "apps/docs/**",
+    "apps/bookwise/tailwind.config.ts": "apps/bookwise/**",
     "packages/ui/tailwind.config.js": "packages/ui/**",
     "packages/tailwind-config/tailwind.config.js": "packages/tailwind-config/**"
   }

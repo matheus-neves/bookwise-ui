@@ -4,6 +4,9 @@ import { Rating } from '@ui-bookwise/ui'
 
 export default function Home() {
   return (
-    <Rating />
+    <>
+      <h1>Hello World!</h1>
+      <Rating />
+    </>
   )
 }

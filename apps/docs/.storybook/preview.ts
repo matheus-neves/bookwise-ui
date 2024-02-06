@@ -1,4 +1,4 @@
-import '@ui-bookwise/tailwind-config/styles.css'
+import '../styles/globals.css'
 import config from '@ui-bookwise/tailwind-config/tailwind.config'
 import { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';

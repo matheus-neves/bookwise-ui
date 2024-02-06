@@ -1,4 +1,4 @@
-import '@ui-bookwise/tailwind-config/styles.css'
+import './styles/globals.css'
 
 export { BookCardContainer, BookCardContent, BookCardDescription, BookCardHeading, BookCardImageWrapper } from "./BookCard";
 export { Rating } from "./Rating";
